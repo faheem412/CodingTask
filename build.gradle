@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'org'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.20.0'
+    implementation 'org.testng:testng:7.10.2'
+    implementation 'com.aventstack:extentreports:5.1.1'
+
+
+}
+
+test {
+    useTestNG()
+}
